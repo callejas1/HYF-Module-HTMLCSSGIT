@@ -1,1 +1,203 @@
+/*Resetting browser margin and padding for all elements*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #262626;
+  color: white;
+  font-family: 'Nanum Myeongjo', Times;
+  text-align: center;
+  line-height: 2em;
+}
+
+/* Adding background image blurry to place photo in the middle. Background takes up the entire viewport height of header and also 100% width */
+
+#header-container {
+  width: 100%;
+  /*height: 50%;*/
+  height: 100vh;
+  padding: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url('https://www.overseaspropertyalert.com/wp-content/uploads/2018/03/mountain-towns-nicaragua.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation bar displays smooth transition when hovering */
+
+#nav-bar {
+  font-size: 20px;
+}
+
+#nav-bar a {
+  font-size: 12px;
+  padding: 5px;
+  color: white;
+}
+
+#nav-bar a:hover {
+  border-left: 2px ridge #ffffff;
+  background-color: #743a6d;
+  transition: 0.5s;
+}
+/* Adding selfie on top of of header */
+
+#selfie {
+  margin-top: 10%;
+  width: 250px;
+  border-radius: 50%;
+}
+
+#selfie:hover {
+  transition: 0.5s ease;
+  opacity: 0.7;
+}
+
+h1 {
+  margin: 50px;
+  font-family: montserrat;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 10px;
+  margin: 30px;
+}
+
+h3 {
+  color: #edcfb9;
+  font: 20px 'cinzel';
+}
+
+h4,
+p {
+  padding: 10px;
+  margin: 10px;
+}
+
+h5 {
+  text-align: center;
+  font-size: medium;
+  margin: 50px;
+}
+
+/* Styling grid to avoid using media query when screen is smaller */
+
+.main-info-container {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /*grid-template-columns: 1fr 1fr;*/
+  grid-gap: 50px;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-info-1 {
+  padding: 30px;
+  grid-row: span 3;
+}
+
+.main-info-2 {
+  padding: 30px;
+  grid-row: span 1;
+}
+
+.main-info {
+  box-shadow: 0 0 50px black;
+}
+
+#about,
+#contact-me,
+#resume,
+#my-blog {
+  border: none;
+  background-color: #fff;
+  color: black;
+}
+
+#codepen-pic {
+  width: 90%;
+}
+#codepen-pic:hover {
+  transition: 0.5s ease;
+  opacity: 0.3;
+}
+
+/* Removed style type and displayed in block elements for spreading. Adjusted border radius to achieve a round shape in the background */
+
+#contact ul {
+  display: flex;
+  justify-content: center;
+}
+#contact ul li {
+  list-style-type: none;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  background: black;
+  border-radius: 50%;
+  margin: 20px 30px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Adding style effects when hovering over each icon */
+
+#contact ul li:nth-child(1):hover {
+  color: #fff;
+  box-shadow: 0 0 30px #3b5998;
+}
+#contact ul li:nth-child(2):hover {
+  color: #fff;
+  box-shadow: 0 0 30px #00acee;
+}
+#contact ul li:nth-child(3):hover {
+  color: #fff;
+  box-shadow: 0 0 30px #c71610;
+}
+#contact ul li:nth-child(4):hover {
+  color: #fff;
+  box-shadow: 0 0 30px #0e76a8;
+}
+
+/* Customizing download button to smoothly change colors*/
+
+#download-button {
+  background-color: #edcfb9;
+  padding: 10px;
+  margin: 20px 0px;
+  border: none;
+  font: 30px 'cinzel';
+  transition: 0.3s ease;
+}
+
+#download-button:hover {
+  background-color: #381c2a;
+}
+
+#download-button a:hover {
+  cursor: pointer;
+}
+
+#download-button a:visited {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+}
 
