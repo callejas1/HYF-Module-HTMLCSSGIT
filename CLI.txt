@@ -1,5 +1,0 @@
-1. We use the mkdir command followed by a dot (.) and the file/folder name. We display it using the ls -a command.
-2. We use the command mkdir followed by the -p flag and then we create the directories as such: mkdir -p /User/dir1/insidedir1
-3. We use the echo command followed by the message we want to append inside quotation marks and >> followed by the name of the file we want to add it to.
-first message
-second message
