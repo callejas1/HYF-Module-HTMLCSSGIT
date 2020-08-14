@@ -16,6 +16,7 @@ body {
 
 #header-container {
   width: 100%;
+  /*height: 50%;*/
   height: 100vh;
   padding: 100px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
@@ -26,6 +27,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* Navigation bar displays smooth transition when hovering */
 
 #nav-bar {
   font-size: 20px;
@@ -39,15 +42,20 @@ body {
 
 #nav-bar a:hover {
   border-left: 2px ridge #ffffff;
-  background-color: #381c2a;
+  background-color: #743a6d;
   transition: 0.5s;
 }
-/* Adding selfie somewhere in the middle of header */
+/* Adding selfie on top of of header */
 
 #selfie {
   margin-top: 10%;
   width: 250px;
   border-radius: 50%;
+}
+
+#selfie:hover {
+  transition: 0.5s ease;
+  opacity: 0.7;
 }
 
 h1 {
@@ -121,23 +129,15 @@ h5 {
   opacity: 0.3;
 }
 
-/* Adding style effects when hovering over each icon */
+/* Removed style type and displayed in block elements for spreading. Adjusted border radius to achieve a round shape in the background */
 
 #contact ul {
   display: flex;
+  justify-content: center;
 }
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-/* Removed style type and displayed in block elements for spreading. Adjusted border radius to achieve a round form in the background */
-
 #contact ul li {
   list-style-type: none;
   font-size: 30px;
-  display: flex;
-  justify-content: center;
   height: 60px;
   width: 60px;
   line-height: 60px;
@@ -148,7 +148,12 @@ a {
   transition: 0.5s ease;
 }
 
-/* Editing each icon with respective social media color when hovering over */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Adding style effects when hovering over each icon */
 
 #contact ul li:nth-child(1):hover {
   color: #fff;
@@ -172,7 +177,7 @@ a {
 #download-button {
   background-color: #edcfb9;
   padding: 10px;
-  margin: 30px;
+  margin: 20px 0px;
   border: none;
   font: 30px 'cinzel';
   transition: 0.3s ease;
@@ -193,6 +198,5 @@ a {
 footer {
   background-color: black;
   padding: 20px;
-  margin-top: 150px;
   width: 100%;
 }
