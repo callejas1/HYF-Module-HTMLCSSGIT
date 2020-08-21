@@ -41,6 +41,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0 0 15px black;
+
 }
 
 h1 {
